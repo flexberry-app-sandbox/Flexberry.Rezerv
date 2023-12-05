@@ -1,0 +1,8 @@
+*** Start programmer edit section *** (План.Опубликовать CustomAttributes)
+
+*** End programmer edit section *** (План.Опубликовать CustomAttributes)
+
+*** Start programmer edit section *** (План.Опубликовать method implementation)
+            return;
+*** End programmer edit section *** (План.Опубликовать method implementation)
+

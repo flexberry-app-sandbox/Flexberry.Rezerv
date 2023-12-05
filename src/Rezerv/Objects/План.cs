@@ -123,18 +123,6 @@ namespace IIS.Rezerv
             }
         }
         
-        // *** Start programmer edit section *** (План.Опубликовать CustomAttributes)
-
-        // *** End programmer edit section *** (План.Опубликовать CustomAttributes)
-        [ICSSoft.STORMNET.AccessType(ICSSoft.STORMNET.AccessType.none)]
-        public virtual void Опубликовать()
-        {
-            // *** Start programmer edit section *** (План.Опубликовать method implementation)
-
-            return;
-            // *** End programmer edit section *** (План.Опубликовать method implementation)
-        }
-        
         /// <summary>
         /// Class views container.
         /// </summary>
@@ -142,7 +130,7 @@ namespace IIS.Rezerv
         {
             
             /// <summary>
-            /// "ПланE" view.
+            /// Редактирование плана.
             /// </summary>
             public static ICSSoft.STORMNET.View ПланE
             {

@@ -28,7 +28,7 @@ export default Controller.extend({
             link: 'i-i-s-rezerv-участник-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-участник-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-участник-l.title'),
-            icon: 'tasks',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-rezerv-проект-l',
@@ -46,7 +46,7 @@ export default Controller.extend({
             link: 'i-i-s-rezerv-план-l',
             caption: i18n.t('forms.application.sitemap.планы.i-i-s-rezerv-план-l.caption'),
             title: i18n.t('forms.application.sitemap.планы.i-i-s-rezerv-план-l.title'),
-            icon: 'book',
+            icon: 'tags',
             children: null
           }]
         }
