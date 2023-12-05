@@ -43,6 +43,26 @@
     {{flexberry-validationmessage error=(v-get validationModel "проект" "message")}}
   </div>
   <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.проект.срок
+      class=(if (v-get validationModel.проект "срок" "isInvalid") "error")
+      label=(t "forms.i-i-s-rezerv-план-e.проект.срок-caption")
+      data-test-i-i-s-rezerv-план-e-проект-срок=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.проект "срок" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.проект.участник.фИО
+      class=(if (v-get validationModel.проект.участник "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-rezerv-план-e.проект.участник.фИО-caption")
+      data-test-i-i-s-rezerv-план-e-проект-участник-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.проект.участник "фИО" "message")}}
+  </div>
+  <div class="field">
     <label>{{t "forms.i-i-s-rezerv-план-e.календарь-caption"}}</label>
     {{flexberry-groupedit
       componentName="календарьGroupEdit"

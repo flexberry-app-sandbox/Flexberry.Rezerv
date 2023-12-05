@@ -16,24 +16,19 @@ export default Controller.extend({
         }, {
           link: null,
           icon: 'list',
-          caption: i18n.t('forms.application.sitemap.rezerv.caption'),
-          title: i18n.t('forms.application.sitemap.rezerv.title'),
+          caption: i18n.t('forms.application.sitemap.справочники.caption'),
+          title: i18n.t('forms.application.sitemap.справочники.title'),
           children: [{
             link: 'i-i-s-rezerv-участник-l',
-            caption: i18n.t('forms.application.sitemap.rezerv.i-i-s-rezerv-участник-l.caption'),
-            title: i18n.t('forms.application.sitemap.rezerv.i-i-s-rezerv-участник-l.title'),
-            icon: 'chart line',
+            caption: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-участник-l.caption'),
+            title: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-участник-l.title'),
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-rezerv-проект-l',
-            caption: i18n.t('forms.application.sitemap.rezerv.i-i-s-rezerv-проект-l.caption'),
-            title: i18n.t('forms.application.sitemap.rezerv.i-i-s-rezerv-проект-l.title'),
-            icon: 'folder open',
-            children: null
-          }, {
-            link: 'i-i-s-rezerv-план-l',
-            caption: i18n.t('forms.application.sitemap.rezerv.i-i-s-rezerv-план-l.caption'),
-            title: i18n.t('forms.application.sitemap.rezerv.i-i-s-rezerv-план-l.title'),
+            caption: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-проект-l.caption'),
+            title: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-проект-l.title'),
+            icon: 'briefcase',
             children: null
           }]
         }, {
@@ -45,7 +40,7 @@ export default Controller.extend({
             link: 'i-i-s-rezerv-план-l',
             caption: i18n.t('forms.application.sitemap.планы.i-i-s-rezerv-план-l.caption'),
             title: i18n.t('forms.application.sitemap.планы.i-i-s-rezerv-план-l.title'),
-            icon: 'suitcase',
+            icon: 'briefcase',
             children: null
           }]
         }

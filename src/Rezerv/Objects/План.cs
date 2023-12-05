@@ -30,13 +30,18 @@ namespace IIS.Rezerv
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ПланE", new string[] {
             "Проект as \'Проект\'",
-            "Проект.Наименование as \'Наименование\'"}, Hidden=new string[] {
+            "Проект.Наименование as \'Наименование\'",
+            "Проект.Срок as \'Срок окончания\'",
+            "Проект.Участник.ФИО as \'Руководитель проекта\'"}, Hidden=new string[] {
             "Проект.Наименование"})]
     [AssociatedDetailViewAttribute("ПланE", "Календарь", "КалендарьE", true, "", "Календарь", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("ПланE", "Проект", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
     [View("ПланL", new string[] {
-            "Проект.Наименование as \'Наименование\'"})]
+            "Проект.Наименование as \'Наименование\'",
+            "Проект.Участник as \'Руководитель проекта\'",
+            "Проект.Срок as \'Срок окончания проекта\'",
+            "Проект.Стоимость as \'Бюджет проекта\'"})]
     public class План : ICSSoft.STORMNET.DataObject
     {
         

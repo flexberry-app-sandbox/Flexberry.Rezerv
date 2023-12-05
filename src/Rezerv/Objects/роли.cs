@@ -12,6 +12,7 @@ namespace IIS.Rezerv
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,19 +29,31 @@ namespace IIS.Rezerv
     public enum роли
     {
         
+        /// <summary>
+        /// Аудитор.
+        /// </summary>
         // *** Start programmer edit section *** (роли.Аудитор CustomAttributes)
 
         // *** End programmer edit section *** (роли.Аудитор CustomAttributes)
+        [Caption("Аудитор")]
         Аудитор,
         
+        /// <summary>
+        /// Исполнитель.
+        /// </summary>
         // *** Start programmer edit section *** (роли.Исполнитель CustomAttributes)
 
         // *** End programmer edit section *** (роли.Исполнитель CustomAttributes)
+        [Caption("Исполнитель")]
         Исполнитель,
         
+        /// <summary>
+        /// Руководитель.
+        /// </summary>
         // *** Start programmer edit section *** (роли.Руководитель CustomAttributes)
 
         // *** End programmer edit section *** (роли.Руководитель CustomAttributes)
+        [Caption("Руководитель")]
         Руководитель,
     }
 }

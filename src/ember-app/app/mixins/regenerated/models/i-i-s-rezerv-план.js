@@ -29,7 +29,11 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ПланE', 'i-i-s-rezerv-план', {
     проект: belongsTo('i-i-s-rezerv-проект', 'Проект', {
-      наименование: attr('Наименование', { index: 1, hidden: true })
+      наименование: attr('Наименование', { index: 1, hidden: true }),
+      срок: attr('Срок окончания', { index: 2 }),
+      участник: belongsTo('i-i-s-rezerv-участник', '', {
+        фИО: attr('Руководитель проекта', { index: 3 })
+      }, { index: -1, hidden: true })
     }, { index: 0, displayMemberPath: 'наименование' }),
     календарь: hasMany('i-i-s-rezerv-календарь', 'Календарь', {
       конец: attr('Конец', { index: 0 }),
@@ -42,8 +46,6 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('ПланL', 'i-i-s-rezerv-план', {
-    проект: belongsTo('i-i-s-rezerv-проект', 'Наименование', {
-      наименование: attr('Наименование', { index: 0 })
-    }, { index: -1, hidden: true })
+    
   });
 };

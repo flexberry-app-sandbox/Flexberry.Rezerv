@@ -23,7 +23,7 @@ $.extend(true, translations, {
     'i-i-s-rezerv-участник': IISRezervУчастникModel
   },
 
-  'application-name': 'Rezerv',
+  'application-name': 'Справочники',
 
   forms: {
     loading: {
@@ -62,7 +62,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Rezerv',
+        'application-name': 'Справочники',
         'application-version': {
           caption: 'Addon version {{version}}',
           title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
@@ -73,8 +73,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Rezerv',
-          title: 'Rezerv'
+          caption: 'Справочники',
+          title: 'Справочники'
         },
         'application-version': {
           caption: 'Addon version {{version}}',
@@ -85,6 +85,26 @@ $.extend(true, translations, {
         index: {
           caption: 'Home',
           title: ''
+        },
+        справочники: {
+          caption: 'Справочники',
+          title: 'Справочники',
+          'i-i-s-rezerv-участник-l': {
+            caption: 'Участник',
+            title: ''
+          },
+          'i-i-s-rezerv-проект-l': {
+            caption: 'Проект',
+            title: ''
+          }
+        },
+        планы: {
+          caption: 'Планы',
+          title: 'Планы',
+          'i-i-s-rezerv-план-l': {
+            caption: 'ПланL',
+            title: 'План'
+          }
         },
         rezerv: {
           caption: 'Rezerv',
@@ -100,14 +120,6 @@ $.extend(true, translations, {
           'i-i-s-rezerv-план-l': {
             caption: 'План',
             title: ''
-          }
-        },
-        планы: {
-          caption: 'Планы',
-          title: 'Планы',
-          'i-i-s-rezerv-план-l': {
-            caption: 'ПланL',
-            title: 'План'
           }
         }
       }
