@@ -22,13 +22,13 @@ export default Controller.extend({
             link: 'i-i-s-rezerv-участник-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-участник-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-участник-l.title'),
-            icon: 'table',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-rezerv-проект-l',
             caption: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-проект-l.caption'),
             title: i18n.t('forms.application.sitemap.справочники.i-i-s-rezerv-проект-l.title'),
-            icon: 'paperclip',
+            icon: 'address card',
             children: null
           }]
         }, {
@@ -40,7 +40,7 @@ export default Controller.extend({
             link: 'i-i-s-rezerv-план-l',
             caption: i18n.t('forms.application.sitemap.планы.i-i-s-rezerv-план-l.caption'),
             title: i18n.t('forms.application.sitemap.планы.i-i-s-rezerv-план-l.title'),
-            icon: 'tags',
+            icon: 'list',
             children: null
           }]
         }
