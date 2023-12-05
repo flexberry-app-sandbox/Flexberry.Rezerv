@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISRezervПлан",
+  "modelName": "i-i-s-rezerv-план",
+  "className": "План",
+  "nameSpace": "IIS.Rezerv",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "проект",
+      "relatedTo": "i-i-s-rezerv-проект",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "календарь",
+      "relatedTo": "i-i-s-rezerv-календарь",
+      "inverse": "план"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПланE",
+      "modelName": "i-i-s-rezerv-план",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Проект",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Проект",
+          "name": "проект",
+          "relatedTo": "i-i-s-rezerv-проект",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "КалендарьE",
+          "caption": "Календарь",
+          "name": "календарь",
+          "relatedTo": "i-i-s-rezerv-календарь",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПланL",
+      "modelName": "i-i-s-rezerv-план",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Проект",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "проект",
+          "relatedTo": "i-i-s-rezerv-проект",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

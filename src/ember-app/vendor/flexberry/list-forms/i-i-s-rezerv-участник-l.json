@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rezerv-участник-e",
+  "editForm": "i-i-s-rezerv-участник-e",
+  "external": false,
+  "caption": "Участник",
+  "name": "IISRezervУчастникL",
+  "className": "УчастникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rezerv-участник",
+      "modelProjection": "УчастникL"
+    }
+  ]
+}

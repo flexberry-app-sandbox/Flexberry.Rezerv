@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Участник",
+  "name": "IISRezervУчастникE",
+  "className": "УчастникE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rezerv-участник",
+      "modelProjection": "УчастникE"
+    }
+  ]
+}

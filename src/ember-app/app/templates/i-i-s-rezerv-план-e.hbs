@@ -1,0 +1,59 @@
+<h3 class="ui header">{{t "forms.i-i-s-rezerv-план-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-rezerv-план-e.проект-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.проект
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="проект"
+      projection="ПроектL"
+      title=(t "forms.i-i-s-rezerv-план-e.проект-caption")
+      readonly=readonly
+      componentName="проектLookup"
+      class=(if (v-get validationModel "проект" "isInvalid") "error")
+      data-test-i-i-s-rezerv-план-e-проект=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "проект" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-rezerv-план-e.календарь-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="календарьGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.календарь
+      content=model.календарь
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "календарь" "isInvalid") "error")
+      data-test-i-i-s-rezerv-план-e-календарь=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "календарь" "message")}}
+  </div>
+</form>

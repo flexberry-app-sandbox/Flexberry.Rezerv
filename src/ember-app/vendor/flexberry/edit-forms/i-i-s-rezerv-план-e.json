@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Проект",
+      "projection": "ПроектL",
+      "detailModelName": null
+    },
+    {
+      "master": "участник",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "Календарь.Участник",
+      "projection": "УчастникL",
+      "detailModelName": "i-i-s-rezerv-календарь"
+    }
+  ],
+  "external": false,
+  "caption": "План",
+  "name": "IISRezervПланE",
+  "className": "ПланE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rezerv-план",
+      "modelProjection": "ПланE"
+    }
+  ]
+}

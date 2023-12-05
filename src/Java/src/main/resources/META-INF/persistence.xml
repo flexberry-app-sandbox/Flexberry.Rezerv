@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Rezerv.model.Uchastnik</class>
+        <class>Rezerv.model.Kalendar</class>
+        <class>Rezerv.model.Proekt</class>
+        <class>Rezerv.model.Plan</class>
+        <class>Rezerv.model.FlexberryAdvLimit</class>
+        <class>Rezerv.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Rezerv.model.NewPlatformFlexberryServicesLock</class>
+        <class>Rezerv.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

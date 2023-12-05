@@ -1,0 +1,51 @@
+﻿{
+  "applicationCaption": "Rezerv",
+  "applicationTitle": "Rezerv",
+  "items": [
+    {
+      "link": null,
+      "menuName": "rezerv",
+      "caption": "Rezerv",
+      "title": "Rezerv",
+      "children": [
+        {
+          "link": "i-i-s-rezerv-участник-l",
+          "menuName": null,
+          "caption": "Участник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-rezerv-проект-l",
+          "menuName": null,
+          "caption": "Проект",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-rezerv-план-l",
+          "menuName": null,
+          "caption": "План",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "планы",
+      "caption": "Планы",
+      "title": "Планы",
+      "children": [
+        {
+          "link": "i-i-s-rezerv-план-l",
+          "menuName": null,
+          "caption": "ПланL",
+          "title": "План",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

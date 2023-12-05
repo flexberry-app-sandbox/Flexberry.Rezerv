@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISRezervУчастник",
+  "modelName": "i-i-s-rezerv-участник",
+  "className": "Участник",
+  "nameSpace": "IIS.Rezerv",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "роль",
+      "type": "i-i-s-rezerv-роли",
+      "flexberryType": "роли",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УчастникE",
+      "modelName": "i-i-s-rezerv-участник",
+      "attrs": [
+        {
+          "name": "роль",
+          "caption": "Роль",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "УчастникL",
+      "modelName": "i-i-s-rezerv-участник",
+      "attrs": [
+        {
+          "name": "роль",
+          "caption": "Роль",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

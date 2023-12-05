@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rezerv-план-e",
+  "editForm": "i-i-s-rezerv-план-e",
+  "external": false,
+  "caption": "План",
+  "name": "IISRezervПланL",
+  "className": "ПланL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rezerv-план",
+      "modelProjection": "ПланL"
+    }
+  ]
+}

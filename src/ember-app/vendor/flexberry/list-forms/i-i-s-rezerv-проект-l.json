@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rezerv-проект-e",
+  "editForm": "i-i-s-rezerv-проект-e",
+  "external": false,
+  "caption": "Проект",
+  "name": "IISRezervПроектL",
+  "className": "ПроектL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rezerv-проект",
+      "modelProjection": "ПроектL"
+    }
+  ]
+}

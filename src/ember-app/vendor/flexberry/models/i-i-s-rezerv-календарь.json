@@ -1,0 +1,107 @@
+﻿{
+  "name": "IISRezervКалендарь",
+  "modelName": "i-i-s-rezerv-календарь",
+  "className": "Календарь",
+  "nameSpace": "IIS.Rezerv",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "конец",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "начало",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "трудозатраты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "участник",
+      "relatedTo": "i-i-s-rezerv-участник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "план",
+      "relatedTo": "i-i-s-rezerv-план",
+      "inverse": "календарь"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КалендарьE",
+      "modelName": "i-i-s-rezerv-календарь",
+      "attrs": [
+        {
+          "name": "конец",
+          "caption": "Конец",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "трудозатраты",
+          "caption": "Трудозатраты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "начало",
+          "caption": "Начало",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Участник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Участник",
+          "name": "участник",
+          "relatedTo": "i-i-s-rezerv-участник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

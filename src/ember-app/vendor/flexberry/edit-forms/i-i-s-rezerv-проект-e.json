@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Участник",
+      "projection": "УчастникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Проект",
+  "name": "IISRezervПроектE",
+  "className": "ПроектE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rezerv-проект",
+      "modelProjection": "ПроектE"
+    }
+  ]
+}
